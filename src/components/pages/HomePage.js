@@ -4,7 +4,7 @@ import Main from '../Main/index';
 
 const HomePage = () => (
     <div>
-        <h1>Home Page</h1>
+        <h1>Accueil</h1>
         <Main/>
     </div>
 );

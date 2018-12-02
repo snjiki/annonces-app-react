@@ -40,7 +40,8 @@ class LoginForm extends React.Component {
   };
 
   render() {
-    const { data, errors, loading } = this.state;
+    /*J'ai inversé loading et errors 01/12/2018*/
+    const { data, loading, errors } = this.state;
 
     return (
       <Form onSubmit={this.onSubmit} loading={loading}>

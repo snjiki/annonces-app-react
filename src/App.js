@@ -4,6 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 import HomePage from './components/pages/HomePage';
 import LoginPage from './components/pages/LoginPage';
+import SigninPage from './components/pages/SigninPage';
 import ProfilePage from './components/pages/ProfilePage';
 import Header from './components/Header/index';
 import ItemPage from './components/ItemPage/index';
@@ -22,9 +23,11 @@ const App = () => (
   <Route path="/profile" exact component={ProfilePage} />
   <Route path="/item/:id" component={ItemPage} />
   <Route path="/myitems" component={MyItems} />
+  <Route path="/signin" exact component={SigninPage} />
 
-  
-</div>
+
+
+ </div>
 );
 
 export default App;

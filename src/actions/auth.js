@@ -19,6 +19,14 @@ export const login = credentials => dispatch =>
     dispatch(userLoggedIn(user));
   });
 
+export const signin = credentials => dispatch =>
+    api.user.signin(credentials).then(user => {
+        localStorage.token = user.token;
+        localStorage.email = user.email;
+        setAuthorizationHeader(user.token);
+        dispatch(userLoggedIn(user));
+    });
+
 export const logout = () => dispatch => {
   localStorage.removeItem("token");
   setAuthorizationHeader();
