@@ -8,6 +8,7 @@ import { login } from "../../actions/auth";
 class LoginPage extends React.Component {
   componentDidMount() {
     document.body.scrollTop = 0;
+    
     document.querySelector('.menu').classList.remove('open');
   }
   submit = data =>
