@@ -6,6 +6,6 @@ export default {
       axios.post("/api/auth", { credentials }).then(res => res.data.user),
 
     signin: (credentials) =>
-      axios.post("/api/signin", { credentials }).then(res => res.data.user)
+      axios.post("/api/user", { credentials }).then(res => res.data.user)
   }
 };
